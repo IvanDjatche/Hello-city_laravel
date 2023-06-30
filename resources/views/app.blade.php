@@ -12,12 +12,13 @@
 
     <body>
         <h1> Hello from Ouest Region Of Cameroun!!</h1>
-
+         <!-- use the date function for display the currently time -->
         <p> It's currently {{ date('h:i:s A')}}.</p>
 
         <footer>
+        <!-- use the date function to display years -->
             <p>&copy; Copyright {{ date('Y')}} &middot; <a href="#">About-Us</a></p>
         </footer>
     </body>
  
-</html>
+</html> 
