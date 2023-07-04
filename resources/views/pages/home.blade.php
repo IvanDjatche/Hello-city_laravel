@@ -4,21 +4,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>About-Us | Hello-City</title>
+        <title>Hello-City</title>
 
-       
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">     
     </head>
 
     <body>
-
-        <p>Built with &hearts; By Ivan Djatche Jordan Dev Web Laravel Fulstack</p>
+        <h1> Hello from Ouest Region Of Cameroun!!</h1>
          <!-- use the date function for display the currently time -->
-        <p><a href="{{ __('/') }}">Revenir à la page d'accueil</a></p>
+        <p> It's currently {{ date('h:i:s A')}}.</p>
 
         <footer>
         <!-- use the date function to display years -->
-            <p>&copy; Copyright {{ date('Y')}} &middot; <a href="{{ __('about-us') }}">About-Us</a></p>
+            <p>&copy; Copyright {{ date('Y')}} &middot;
+                   <a href="{{ __('about-us') }}">About-Us</a>
+            </p>
         </footer>  
     </body>
  
