@@ -2,9 +2,7 @@
 @extends('master')
 
 <!-- create new section to update title : first method  -->
-@section('title')
- About Us | Hello City
-@endsection
+@section('title', 'About Us | Hello City')
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 

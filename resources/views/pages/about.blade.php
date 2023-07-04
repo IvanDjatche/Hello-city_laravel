@@ -3,8 +3,6 @@
 
 <!-- crete new section to update title : first method --> 
 @section('title') 
- Hello City
-@endsection
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 
