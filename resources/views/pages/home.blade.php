@@ -1,8 +1,8 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
 @extends('master')
 
-<!-- create new section to update title : first method  -->
-@section('title', 'About Us | Hello City')
+<!-- create new section to update title -->
+@section('title')
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 

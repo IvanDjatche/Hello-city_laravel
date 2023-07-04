@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- update title in function page with use yield. we give Hello City as default title -->
-        <title> @yield('title', 'Hello City')</title>
+        <!-- <title> @yield('title', 'Hello City')</title> -->
+
+        <!-- usage des variables d'environement pour les titres de page : second method -->
+        <title> @yield('title', env('APP_NAME'))</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">     
