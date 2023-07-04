@@ -2,9 +2,14 @@
 @extends('master')
 
 <!-- crete new section to update title : first method --> 
-<!-- @section('title', 'About Us | Hello City')  -->
+<!-- section('title', 'About Us | Hello City')  -->
+
 <!-- create new section to update title we use environment variable : second method -->
-@section('title', 'About Us | '. env('APP_NAME'))
+<!-- section('title', 'About Us | '. env('APP_NAME')) -->
+
+ <!-- usage des fichier de configuration pour les titres de page : 3em method -->
+ @section('title', 'About Us | '. config('app.name'))
+ 
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 
