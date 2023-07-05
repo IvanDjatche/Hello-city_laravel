@@ -24,7 +24,11 @@
         <footer>
         <!-- use the date function to display years -->
             <p>&copy; Copyright {{ date('Y')}} &middot;
+
+                <!-- use if condition to display about link  -->
+                @if(! Route::is('app_about'))
                    <a href="{{ route('app_about') }}">About-Us</a>
+                @endif
             </p>
         </footer>  
     </body>
