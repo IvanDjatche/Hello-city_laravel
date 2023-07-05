@@ -15,7 +15,7 @@
 
         <p>Built with &hearts; By Ivan Djatche Jordan Dev Web Laravel Fulstack</p>
          <!-- use the date function for display the currently time -->
-        <p><a href="{{ __('/') }}">Revenir à la page d'accueil</a></p>
+        <p><a href="{{ route('app_home') }}">Revenir à la page d'accueil</a></p>
 
 @endsection
 

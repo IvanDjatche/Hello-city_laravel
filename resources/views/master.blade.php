@@ -24,7 +24,7 @@
         <footer>
         <!-- use the date function to display years -->
             <p>&copy; Copyright {{ date('Y')}} &middot;
-                   <a href="{{ __('about-us') }}">About-Us</a>
+                   <a href="{{ route('app_about') }}">About-Us</a>
             </p>
         </footer>  
     </body>

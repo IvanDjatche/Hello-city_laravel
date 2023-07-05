@@ -12,12 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// give the names at my route 
 Route::get('/', function () {
-    return view('pages/home');
-});
+    return view('pages/home'); 
+})->name('app_home');
 
 Route::get('/about-us', function()
     {
         return view('pages/about');
-});
+})->name('app_about');
