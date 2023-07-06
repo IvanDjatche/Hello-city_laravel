@@ -13,11 +13,15 @@
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 
-        <img src="{{ asset('images/ivanovich.jpg') }} " alt="dev_senior">
+        <img src="{{ asset('images/ivanovich.jpg') }} " alt="dev_senior" class="my-10 rounded-full h-80 w-80 shadow-2xl motion-safe:hover:scale-110 ">
 
-        <p>Built with &hearts; By Ivan Djatche Jordan Dev Web Laravel Fulstack</p>
-         <!-- use the date function for display the currently time -->
-        <p><a href="{{ route('app_home') }}">Revenir à la page d'accueil</a></p>
+        <h2 class="text-gray-500 text-xs sm:text-lg mb-3 ">
+                Built with <span class="text-pink-400">&hearts;</span> By <span class="text-black-300 font-bold">Ivan Djatche Jordan</span> Dev Web Laravel Fulstack
+        </h2>
+                 <!-- use the date function for display the currently time -->
+        <p class="text-indigo-400 hover:text-red-500 underline">
+                <a href="{{ route('app_home') }}">Revenir à la page d'accueil</a>
+        </p>
 
 @endsection
 
