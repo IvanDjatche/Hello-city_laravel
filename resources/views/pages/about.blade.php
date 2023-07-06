@@ -13,6 +13,8 @@
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 
+        <img src="{{ asset('images/ivanovich.jpg') }} " alt="dev_senior">
+
         <p>Built with &hearts; By Ivan Djatche Jordan Dev Web Laravel Fulstack</p>
          <!-- use the date function for display the currently time -->
         <p><a href="{{ route('app_home') }}">Revenir à la page d'accueil</a></p>

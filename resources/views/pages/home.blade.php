@@ -7,6 +7,8 @@
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
 
+        <img src="{{ asset('images/Drapeau_cmr.png') }}" alt="cameroun-flag">
+
         <h1> Hello from Ouest Region Of Cameroun!!</h1>
         
          <!-- use the date function for display the currently time -->
