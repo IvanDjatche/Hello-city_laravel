@@ -1,5 +1,5 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
-@extends('master')
+@extends('layouts/master')
 
 <!-- create new section to update title -->
 @section('title')

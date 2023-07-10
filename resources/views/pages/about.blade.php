@@ -1,5 +1,5 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
-@extends('master')
+@extends('layouts/master')
 
 <!-- crete new section to update title : first method --> 
 <!-- section('title', 'About Us | Hello City')  -->

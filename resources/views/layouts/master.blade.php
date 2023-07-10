@@ -21,21 +21,13 @@
 
     <body class="py-6 flex flex-col items-center justify-between min-h-screen">
 
-                <!-- yield cree un bloc ou une section content qui sera utilisé au niveau des pages pour cree le contenu en fonction de la page -->
-                <main role="main" class="flex flex-col justify-center items-center">
-                    @yield('content')
-                </main>
+                <!-- === includ main page ===  -->
+                @include('layouts.partials.main')
+                <!-- === end === -->
 
-                <footer class="">
-                    <!-- use the date function to display years -->
-                    <p class="text-gray-400">
-                        &copy; Copyright {{ date('Y')}} 
-                        <!-- use if condition to display about link  -->
-                        @if(! Route::is('app_about'))
-                        &middot; <a href="{{ route('app_about') }}" class="text-indigo-400 hover:text-indigo-700 underline">About-Us</a>
-                        @endif
-                    </p>
-                </footer>  
+                <!-- === includ footer page ===  -->
+                @include('layouts.partials.footer')
+                <!-- === end === -->
     </body>
 
 </html> 
