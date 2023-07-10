@@ -1,5 +1,5 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
-@extends('layouts/master', ['pageTitle' => 'About-us | ' . config('app.name')])
+@extends('layouts/master', ['pageTitle' => 'About-us'])
 
 <!-- crete new section to update title : first method --> 
 <!-- section('title', 'About Us | Hello City')  -->
