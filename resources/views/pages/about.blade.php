@@ -1,5 +1,5 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
-@extends('layouts/master')
+@extends('layouts/master', ['pageTitle' => 'About-us | ' . config('app.name')])
 
 <!-- crete new section to update title : first method --> 
 <!-- section('title', 'About Us | Hello City')  -->
@@ -8,7 +8,7 @@
 <!-- section('title', 'About Us | '. env('APP_NAME')) -->
 
  <!-- usage des fichier de configuration pour les titres de page : 3em method -->
- @section('title', 'About Us | '. config('app.name'))
+ <!-- section('title', 'About Us | '. config('app.name')) -->
  
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')

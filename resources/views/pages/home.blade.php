@@ -1,8 +1,8 @@
 <!-- extends permet d'heriter du layout de base ayant pour nom master  -->
-@extends('layouts/master')
+@extends('layouts/master', ['pageTitle' =>  config('app.name')])
 
 <!-- create new section to update title -->
-@section('title')
+<!-- section('title') -->
 
 <!-- section permet de cree du contenu en fonction des diff pages grace a yield du layout de base  -->
 @section('content')
