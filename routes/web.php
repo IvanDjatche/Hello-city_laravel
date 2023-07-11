@@ -14,12 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 // give the names at my route 
-Route::get('/', function () {
+// Route::get('/', function () {
+//     return view('pages/home'); 
+// })->name('app_home');
 
-    return view('pages/home'); 
-})->name('app_home');
+// another method of writing routes
+// route::get('/', fn() => view ('pages/home'))->name('app_home');
 
-Route::get('/about-us', function() {
-    
-        return view('pages/about');
-})->name('app_about');
+// another method of writing routes
+route::view('/', 'pages/home')->name('app_home');
+
+// Route::get('/about-us', function() {
+//         return view('pages/about');
+// })->name('app_about');
+
+// another method of writing routes
+// route::get('/about-us', fn() => view ('pages/about'))->name('app_about');
+
+// another method of writing routes
+route::view('/about-us', 'pages/about')->name('app_about');
