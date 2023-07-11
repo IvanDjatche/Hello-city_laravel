@@ -9,7 +9,7 @@
                 <!-- usage des variables d'environement pour les titres de page : second method
                 <title> @yield('title', env('APP_NAME'))</title> -->
 
-                <title>{{ isset($pageTitle) ? $pageTitle. ' | ' . config('app.name')  : config('app.name') }}</title>
+                <title>{{ page_title($title ?? null) }}</title>
 
                 <!-- usage des fichier de configuration pour les titres de page : 3em method -->
                 <!-- <title> yield('title', config('app.name'))</title> -->
